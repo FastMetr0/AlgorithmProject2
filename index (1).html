@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Route Optimization: Cairo → Aleppo</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h2 style="text-align:center;">
+  Route Optimization from Cairo to Aleppo (Mongol Invasion)
+</h2>
+
+<div class="canvas-container">
+  <canvas id="graphCanvas" width="1000" height="550"></canvas>
+</div>
+  <p id="result" style="text-align:center; font-weight:bold;"></p>
+
+<div class="button-container">
+<button onclick="runDijkstraFromBackend()">Phase 1: Dijkstra</button>
+ <button onclick="runDinicFromBackend()">Phase 2: Dinic</button>
+<button onclick="runSSPFromBackend()">Phase 3: SSP</button>
+</div>
+
+<script src="graph.js"></script>
+</body>
+</html>
